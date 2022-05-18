@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    練習四
+    1.輸入存入數量 1000
+    2.買東西的錢多少 500
+    3.餘額
+    如果不夠 無法扣款
+
+    最後顯示存款剩多少
+
+    <script>
+        let num1 = parseInt(prompt('存入金額', ));
+        let num2 = parseInt(prompt('支出', ));
+        // let num3 = parseInt(prompt('餘額', ));
+
+        resault = Number(num1) - Number(num2)
+        console.log(resault)
+
+        if((num1 - num2)<0){
+            console.log("無法扣款")
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;  
+    font-family: '標楷體';
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    width: 1024px;
+    padding: 0,20px;
+    margin:10px auto ;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.top , .menu , .update ,  .marquee ,.content ,.footer{
+    border: 1px solid lightgray;
+}
+.top{
+    flex-basis: 1000px;
+    height: 65px;    
+}
+.aside

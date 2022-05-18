@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+    overflow: hidden;
+}
+
+/* body.main */
+.main{
+    display: flex;
+    /* height: 768px; */
+    width: 1024px;
+    padding: 0 , 12px;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 畫線border */
+body>*:not(aside, section),
+.aside>*,
+.section>*{
+    border: 1px solid lightgray;
+}
+
+/* .top , .menu , .update ,  .marquee ,.content ,.footer{
+    border: 1px solid lightgray;
+} */
+
+/* top */
+
+.top{
+    /* flex-basis: 1000px; */
+    width: 1000px;
+    height: 65px;
+}
+
+/* aside */
+.aside{
+    /* flex-basis: 215px; */
+    width: 215px;
+    height: calc(768px - 65px - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* aside header .menu  */
+.menu{
+    /* flex-basis: calc(100% - 25px); */
+    height: calc(100% - 25px);
+}
+
+.menuHead{
+    font-size:24px ; 
+    color: #ff00ff;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 500;
+    margin: 20px auto;
+}
+
+.menu>a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    width: 200px;
+    height: 35px;
+    margin-top: 10px;
+    /* line-height: 35px; */
+    padding-top: 8px;
+    background-image: url(../images/menu1.png);
+    /* background: url(../images/menu1.png) no-repeat; */
+}
+
+.menu>a:hover{
+    background-image: url(../images/menu2.png);
+}
+
+/* aside update */
+.update{
+    /* flex-basis: 25px; */
+    height: 25px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* section */
+.section{
+    /* flex-basis: calc(1000px - 215px); */
+    /* flex-basis: 785px; */
+    width: calc(1000px - 215px);
+    display: flex;
+    flex-direction: column;
+}
+
+.marquee{
+    /* flex-basis: 29px; */
+    height: 29px;
+    font-family: '標楷體';
+    font-size: 24px;
+    color: #0000FF;
+}
+
+.content{
+    flex-basis: calc(100% - 29px);
+}
+.content>iframe{
+    width: 100%;
+    height: 100%;
+}
+/* footer */
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
