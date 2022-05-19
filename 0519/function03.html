@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myClass{
+            color: red;
+        }
+        .blueClass{
+            color: blue;
+        }
+        .queryClass{
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="test">
+
+    </div>
+
+    <div class="myClass">
+       hello myCLass1 
+    </div>
+    <div class="myClass">
+        hello myCLass2
+    </div>
+
+    <div id="query">
+        query id test
+    </div>
+
+    <div class="queryClass">
+        query id test
+    </div>
+
+    <div class="queryClass">
+        query id test
+    </div>
+
+    <script>
+        const myClass = document.getElementsByClassName("myClass");
+        console.log(myClass[0].innerText)
+        myClass[1].style.color = "blue"
+        console.log(myClass[1].innerText)
+
+        const query = document.querySelector("#query")
+        query.style.color = "green"
+
+        const queryALLClass = document.querySelectorAll('.queryClass')
+        // queryClass.style.color = "bro"
+        
+        // const testDiv = document.getElementById('test');
+        // testDiv.innerText = "add test txt";
+        // testDiv.innerHTML = "<h1>hello</h1>";
+
+        let student1 ="amy";
+        let student2 ="bob";
+        let student3 ="cat";
+
+        //1.宣告變數
+        let x = 10 ;
+        
+        //2.宣告常數
+        const y = 20;
+
+        //3.var 宣告變數 var
+        var z = 30;
+
+    </script>
+</body>
+</html>
