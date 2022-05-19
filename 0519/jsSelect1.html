@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        .myClass {
+            color: red;
+        }
+
+        .blueClass {
+            color: blue;
+        }
+
+        .queryClass {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+
+    </div>
+
+    <div class="myClass">
+
+
+        <div class="queryClass">
+            query id test
+        </div>
+        <div class="queryClass">
+            query id test
+        </div>
+        <br><br>
+        <button id="myBtn"> button</button>
+
+        <div id="result">
+            123
+        </div>
+
+        <script>
+            // 練習三 button touch queryClass red
+            const myBtn = document.getElementById('myBtn');
+            const result = document.getElementById('result');
+            const queryAllClass = document.querySelectorAll('.queryClass');
+
+
+            myBtn.addEventListener('click', function () {
+                // alert('myBtn ok');
+                for (const key in queryAllClass) {
+                    queryAllClass[key].style.color = "red";
+                }
+                result.innerHTML = "div 切換成功"
+            });
+
+
+
+        </script>
+
+</html>
