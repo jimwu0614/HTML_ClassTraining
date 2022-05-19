@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="myFun()" name="myFun">function button</button>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "hello"'>button</button>
+
+    <div id="demo">
+        123
+    </div>
+    <script>
+        function myFun() {
+            alert('my function ok');
+        }
+    </script>
+</body>
+</html>
