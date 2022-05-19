@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+        let save = parseInt(prompt('目前存款金額', 0));
+        console.log('存款 =>' + save);
+
+        let action = parseInt(prompt('後續動作 1.領錢 2.轉帳 3.存錢 ?', 0));
+        console.log('動作 =>' + action);
+
+        function getMoneyFun() {
+            console.log("領錢中")
+            let get = parseInt(prompt('領多少錢 ?', 0));
+            console.log('領錢金額=>' + get)
+            if (save >= get) {
+                console.log("成功")
+                save = save - get
+
+            } else {
+                console.log("餘額不足")
+            }
+            console.log("餘額為=>" + save)
+            alert("餘額為=>" + save)
+        }
+
+        function transMoneyFun() {
+            console.log("轉帳中")
+
+            let transID = prompt('轉入帳號', 0);
+            console.log('轉入帳號=>' + transID)
+
+            let trans = parseInt(prompt('轉多少錢 ?', 0));
+            console.log('轉帳金額=>' + trans)
+
+            if (save >= trans) {
+                console.log("成功")
+                save = save - trans
+
+            } else {
+                console.log("餘額不足")
+            }
+            console.log('餘額為=>' + save)
+            alert("餘額為=>" + save)
+        }
+
+
+        switch (action) {
+            case 1:
+                getMoneyFun()
+                break;
+            case 2:
+                transMoneyFun()
+                break;
+
+            case 3:
+                console.log("存錢中")
+                let put = parseInt(prompt('存多少錢 ?', 0));
+                console.log('領錢金額=>' + put)
+
+                save = save + put
+
+                console.log("餘額為=>" + save)
+                alert("餘額為=>" + save)
+                break;
+        }
+    </script>
+</body>
+
+</html>
