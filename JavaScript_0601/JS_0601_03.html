@@ -83,36 +83,36 @@
             //     }
             // }else{
                 document.write(i+1)
-                for (let j = num; j > i; j=j-1) {
-                    // document.write('&nbsp')
-                    document.write('.')
+                for (let j = num; j > i; j--) {
+                    document.write('&nbsp')
+                    // document.write('.')
                 }
                 
-                for (let k = 0; k < (i*2+1); k++) {
+                for (let k = 0; k < (i*2+1); k=k+1) {
                     document.write('*')
                 }
             // }
 
-            
+            document.write(`${i}`)
             document.write('<br>')
         }
         
-        document.write("<br>")
+        // document.write("<br>")
 
-        for (let l = 0; l < num; l++) {
+        for (let l = 0; l < num ; l=l+1) {
             document.write((l+num+2))
-            for (let m = 0; m < (l+1); m++) {
-                // document.write("&nbsp")
-                document.write('.')
+            for (let m = 0; m < (l+1); m=m+1) {
+                document.write("&nbsp")
+                // document.write('.')
                 
             }
             
-            for (let n = (num*2-1); n > (l*2); n--) {
+            for (let n = 7; n > (l*2); n=n-1) {
                 console.log("n->"+ n);
                 document.write('*')   
             }
             
-            console.log("l+num->"+(l+num));
+            // console.log("l+num->"+(l+num));
             console.log("l*2->" +l*2);
             document.write(`${l}`)
             document.write('<br>')
