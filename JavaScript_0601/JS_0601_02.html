@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        sum = '';
+        input = 5;
+        for (let i = 0; i < input; i++) {
+            // sum = sum + '*';
+            sum += '*';
+            console.log(`${i+1} => ${sum}`);
+            // document.write(`${i} => ${sum} <br>`)
+            document.write(`${i+1} => ${sum} <br>`)
+            // document.write(`${sum} <br>`)
+        }
+
+
+        document.write('<br>')
+        document.write('<br>')
+        document.write('<br>')
+
+
+
+        for (let x = 0; x <= 5; x++) {
+            document.write(x )
+            for (let y = 6; y > x; y=y-1) {
+                document.write('*')
+                
+            }
+            document.write('<br>')
+        }
+    </script>
+</body>
+
+</html>

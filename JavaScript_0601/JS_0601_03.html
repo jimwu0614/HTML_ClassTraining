@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+        //      *  
+        //     ***
+        //    *****
+        //   *******
+        //  *********
+
+
+
+        let num = 4
+
+
+        for (let x = 0; x <= num; x++) {
+            document.write(x+1)
+            for (let y = num; y > x; y=y-1) {
+                document.write('&nbsp')
+                
+            }
+
+            for (let z = 0; z < (x*2+1); z++) {
+                document.write('*')
+            }
+
+            document.write('<br>')
+        }
+
+
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+
+        //      *  
+        //     ***
+        //    *****
+        //   *******
+        //  *********        
+        //   *******
+        //    *****
+        //     ***
+        //      *  
+
+
+        document.write(num)
+        document.write('<hr>')
+
+
+        for (let i = 0; i <= num; i++) {
+            
+            // if (i<9) {
+            //     document.write('0')
+            //     document.write(i+1)
+                
+            //     for (let j = num; j > i; j=j-1) {
+            //         document.write('&nbsp')                
+            //     }
+                
+            //     for (let k = 0; k < (i*2+1); k++) {
+            //         document.write('*')
+            //     }
+            // }else{
+                document.write(i+1)
+                for (let j = num; j > i; j=j-1) {
+                    // document.write('&nbsp')
+                    document.write('.')
+                }
+                
+                for (let k = 0; k < (i*2+1); k++) {
+                    document.write('*')
+                }
+            // }
+
+            
+            document.write('<br>')
+        }
+        
+        document.write("<br>")
+
+        for (let l = 0; l < num; l++) {
+            document.write((l+num+2))
+            for (let m = 0; m < (l+1); m++) {
+                // document.write("&nbsp")
+                document.write('.')
+                
+            }
+            
+            for (let n = (num*2-1); n > (l*2); n--) {
+                console.log("n->"+ n);
+                document.write('*')   
+            }
+            
+            console.log("l+num->"+(l+num));
+            console.log("l*2->" +l*2);
+            document.write(`${l}`)
+            document.write('<br>')
+
+        }
+        </script>
+    </body>
+    </html>
+</body>
+</html>

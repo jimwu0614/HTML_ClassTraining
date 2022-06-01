@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 作業20220526 switch case
+        // 發號牌的動作 總共發90個
+        // 取餘數
+        // 早上圖書館讀書 1 4 7
+        // 下午圖書館讀書 2 5 8
+        // 晚上圖書館讀書 3 6 9
+
+
+        let $num = 1
+        switch ($num % 3) {
+            case 1:
+                console.log('早上');
+                break;
+            case 2:
+                console.log('下午');
+                break;
+            default:
+                console.log('晚上');
+                break;
+        }
+
+
+        let $s = 0;
+        for (let $i = 0; $i <= 10; $i++) {
+            console.log($i);
+             $s = $s + $i;
+            console.log('和->' + $s);
+        }
+
+    </script>
+</body>
+</html>
