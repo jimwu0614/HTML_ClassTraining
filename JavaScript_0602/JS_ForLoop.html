@@ -5,15 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table tr td{
+            font-size: 20px;
+            border: 1px solid black;
+            margin: 0;
+            background-color: beige;
+        }
+
+        .red{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
+
+    <div class="red"></div>
     <script>
-        let get = ''; 
+        let get = 1; 
         for (let i = 1; i <=10; i++) {
             document.write(i)
             document.write("&nbsp&nbsp&nbsp&nbsp")
             
-            get = (get+i)
+            get = (get*i)
             document.write(get)
             document.write("<br>")
         }
@@ -24,17 +42,29 @@
         document.write("<hr>")
         
         
-        let sum = 0;
-        for (let i = 1; i <= 10; i++) {
-            document.write('old sum =>' +sum);
-            document.write("<br>")
-            document.write('i => ' + i); // 1
-            document.write("<br>")
-            sum = sum + i; // 0 = 0 + 1
-            
-            document.write('sum = sum + i ; => ' + sum);
-            document.write("<br>")
-        }
+        document.write("<h1>九九乘法</h1>")
+        document.write("<table>")
+            for (let x = 1; x <= 9 ; x++) {
+                document.write("<tr>")
+                // document.write(x)
+                
+                for (let y = 1; y <= 9 ; y++) {
+                if (y==2) {
+                    
+                    document.write('<td class = "red">')
+                    document.write(`${y}*${x}=${x * y}`)
+                } else {
+                    
+                    document.write("<td>")
+                    document.write(`${y}*${x}=${x * y}`)
+                }    
+                    // document.write(x*y)
+                }
+                
+            }
+            document.write("</table>")
+
+
     </script>
 </body>
 </html>
