@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 0~100奇數  三種迴圈
+
+        //for
+        document.write('for loop <br>');
+
+        for (let ia = 1; ia <= 100; ia = ia + 2) {
+            document.write(`${ia} <br>`)
+        }
+
+        //for
+        // for (let i = 0; i <= 100; i++) {
+        //     if(i % 2 == 1){
+        //         document.write(`${i}<br>`);
+        //     }
+        // }
+
+        document.write('<hr>');
+
+        // while
+        document.write('while loop <br>');
+
+        let ib = 0
+        while (ib <= 100) {
+            if (ib % 2 == 1) {
+                document.write(`${ib}<br>`);
+            }
+            ib++
+        }
+
+        document.write('<hr>');
+
+        // do while
+        document.write('dowhile loop <br>');
+
+        let ic = 0
+        do {
+            // document.write(`hello`);
+            if (ic % 2 == 1) {
+                document.write(`${ic}<br>`);
+            }
+            ic++
+        } while (ic <= 100);
+        // } while (ic <= -1);
+    </script>
+</body>
+
+</html>
