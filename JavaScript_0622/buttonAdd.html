@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <button id="btn" >button</button>
+    </p>
+    <p>
+        <button id="btn" onclick="del()" >delete</button>
+    </p>
+    <div id="div1">
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+<script>
+    function del() {
+        console.log('del ok');
+        p2.remove();
+    }
+    const p1 = document.getElementById('p1');
+    const p2 = document.getElementById('p2');
+
+    
+    function add() {
+        const pElement = document.createElement('p');
+        
+        const textTextNode = document.createTextNode('hello 您好嗎 衷心感謝');        
+        
+        pElement.appendChild(textTextNode);
+        console.log('pElement',pElement);
+        
+        
+        const div1 = document.getElementById('div1');
+        div1.appendChild(pElement);
+
+        console.log(div1);
+        
+    }
+    let btn = document.getElementById('btn');
+    console.log('btn', btn);
+    btn.addEventListener('click', add)
+
+
+
+    
+</script>
+
+</body>
+</html>
